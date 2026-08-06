@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# 実データ（JRA-VANデータの二次配布・商用利用は規約上不可のためコミット禁止）
+data/*.db
+data/*.sqlite
+data/*.csv
+!data/.gitkeep
+
+.env
+*.local

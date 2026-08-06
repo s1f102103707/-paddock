@@ -1,0 +1,9 @@
+[project]
+name = "keiba-tool"
+version = "0.1.0"
+description = "競馬予想支援ツール（個人利用・非商用） Phase 1 MVP"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
