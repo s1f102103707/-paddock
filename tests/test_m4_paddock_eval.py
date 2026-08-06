@@ -4,8 +4,8 @@ from keiba.m4_paddock_eval import make_score
 
 
 def test_make_score_valid():
-    score = make_score("R1", 1, {"気配": 2, "毛艶": 1, "気合い": 0, "発汗": -1, "落ち着き": 2, "歩くリズム": 1})
-    assert score.total == 5
+    score = make_score("R1", 1, {"毛艶": 1, "発汗": -1, "歩くリズム": 1})
+    assert score.total == 1
 
 
 def test_make_score_rejects_unknown_item():
@@ -15,4 +15,4 @@ def test_make_score_rejects_unknown_item():
 
 def test_make_score_rejects_out_of_range():
     with pytest.raises(ValueError):
-        make_score("R1", 1, {"気配": 3})
+        make_score("R1", 1, {"毛艶": 3})

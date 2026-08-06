@@ -60,10 +60,10 @@ class JockeyTrainerStats:
 #
 # 採点基準の正式な加点/減点表はユーザー未確定のため、暫定仕様として以下を採用する:
 #   各項目 -2 (悪い) 〜 +2 (良い) の5段階。
-# 項目は「気配・状態系」（レースごとに変動する当日の状態）と「馬体系」（脚・胴・
+# 項目は「状態系」（レースごとに変動する当日の状態）と「馬体系」（脚・胴・
 # 筋肉量など、比較的変化の少ない体型的特徴）の2グループで構成する。
 # 正式な採点基準表が決まったら各タプルと採点範囲をここで更新すること。
-PADDOCK_CONDITION_ITEMS = ("気配", "毛艶", "気合い", "発汗", "落ち着き", "歩くリズム")
+PADDOCK_CONDITION_ITEMS = ("毛艶", "発汗", "歩くリズム")
 PADDOCK_CONFORMATION_ITEMS = ("脚の長さ", "胴の長さ", "トモの筋肉量", "胸前の筋肉")
 PADDOCK_ITEMS = PADDOCK_CONDITION_ITEMS + PADDOCK_CONFORMATION_ITEMS
 PADDOCK_ITEM_MIN = -2
