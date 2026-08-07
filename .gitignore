@@ -3,6 +3,7 @@ __pycache__/
 .pytest_cache/
 .venv/
 venv/
+*.egg-info/
 
 # 実データ（JRA-VANデータの二次配布・商用利用は規約上不可のためコミット禁止）
 data/*.db
